@@ -134,12 +134,57 @@ ul {
     margin: 20px 0;
 }
 
+.name-list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.friend-item {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 15px;
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.friend-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-tertiary);
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+}
+
+.result-item {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 20px;
+    border: 3px solid var(--color-primary);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Botón de sortear título */
